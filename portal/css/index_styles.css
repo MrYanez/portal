@@ -1,0 +1,135 @@
+/*This is my indexstyles.css talking to my index.html*/
+
+*{padding:0; 
+    margin:0 auto;}
+    
+body .home {background-color:whitesmoke;}
+     
+    div#wrapper{
+        width:950px;
+        margin: 0 auto 0 auto;
+        /*background-color: lightgray;*/
+        overflow: hidden;
+}
+    
+    header {background-color:whitesmoke;
+    width:948px;
+    height: 75px;}
+    
+    .tittle h1 {font-size:50px;
+        margin-left:550px;
+        margin-top: 0px;}
+    
+        /*h1:hover {color:darkred;}*/
+
+    nav {height: 50px;
+        line-height: 50px;
+        background-color: black;
+        width:948px;}
+    
+    nav ul {list-style-type: none;}
+    
+    nav a {text-decoration: none;
+    display:block;
+    color: #fff;}
+    
+    #primary {height: 50px;
+    line-height: 50px;
+    background: black;
+    margin-bottom: 1px;}
+    
+    #primary ul {list-style-type: none;
+    width:951px;
+    margin: 0 auto;}
+    
+    #primary li{float:left;
+    width:20%;
+    text-align: center;}
+    
+    #primary a {text-decoration: none;
+    display:block;
+    color:white;}
+    
+    #primary a:hover {background: darkred;
+    color:#fff;}
+    
+    .home #primary li:nth-child(1) a, /*Adding a comma affter the "a" changes the background to red hover static */
+    .about #primary li:nth-child(2) a, 
+    .tours #primary li:nth-child(3) a, 
+    .gallery #primary li:nth-child(4) a, 
+    .contact #primary li:nth-child(5) a
+    
+    {background-color: darkred;
+    color:white;}
+    
+    main {background-color: whitesmoke;
+        width:635px;
+        height:799px;
+        float:right;
+}
+    
+    p {font-size: 20px;
+    line-height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;}
+    
+    aside {background-color:whitesmoke;
+    width:314px;
+    height: 450px;
+    float:right;}
+
+    .aside_img {
+        background-color: black;
+        width:310px;
+        height: 430px;
+        float: right;
+     }
+
+    .aside_img .mypicture {
+    margin-top: 0px;}
+
+    .aside_bottom {background-color:whitesmoke;
+        width:314px;
+        height: 35px;
+        float:right;}
+
+    .aside_bottom h2 {color:black;
+        width:260px;
+        font-size: 28px;
+        margin-left:25px;
+        float:center;}
+
+    .content_h2 {background-color:whitesmoke;
+        width:314px;
+        height: 316.5px;
+        float:left;
+        margin-left:0px;}
+    
+    .content_h2 ul {
+        float:left;
+        margin-left:30px;
+        margin-top: 10px;}
+
+    .content_h2 ol {float:left;}
+            
+    .content_h2 a {color:darkred;
+            font-size: 25px;
+            line-height: 35px;}
+            
+    footer{ background-color: whitesmoke;
+    width:960px;
+    height: 50px;
+    clear:both;
+    line-height: 45px;}
+    
+    footer ul {list-style-type: none;
+    float:left;
+    margin-right: 1px;}
+    
+    footer li {float:left;
+    margin-left: 30px;
+    font-size: 18px;}
+    
+    footer a {color:Darkred;
+    font-size: 18px;}
