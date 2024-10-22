@@ -1,0 +1,92 @@
+
+/*This is index_styles.css added to header.php code not needed here, but it can be changed*/
+
+*{padding:0; 
+    margin:0 auto;}
+    
+    body {background-color:whitesmoke;}
+    
+    div#wrapper{
+        width:950px;
+        margin: 0 auto 0 auto;
+        /*background-color: lightgray;*/
+        overflow: hidden;
+}
+    
+    header {background-color:lightgreen;
+    width:950px;
+    height: 75px;}
+    
+    .tittle h1 {font-size:50px;
+        margin-left:550px;
+        margin-top: 0px;}
+    
+        /*h1:hover {color:darkred;}*/
+
+    nav {height: 50px;
+        line-height: 50px;
+        background-color: black;
+        width:956px;}
+    
+    nav ul {list-style-type: none;}
+    
+    nav a {text-decoration: none;
+    display:block;
+    color: #fff;}
+    
+    #primary {height: 50px;
+    line-height: 50px;
+    background: black;}
+    
+    #primary ul {list-style-type: none;
+    width: 955px;
+    margin: 0 auto;}
+    
+    #primary li{float:left;
+    width:20%;
+    text-align: center;}
+    
+    #primary a {text-decoration: none;
+    display:block;
+    color:white;}
+    
+    #primary a:hover {background: darkred;
+    color:#fff;}
+    
+    .home #primary li:nth-child(1) a, /*Adding a comma affter the "a" changes the background to red hover static */
+    .about #primary li:nth-child(2) a, 
+    .tours #primary li:nth-child(3) a, 
+    .gallery #primary li:nth-child(4) a, 
+    .contact #primary li:nth-child(5) a
+    
+    {background-color: darkred;
+    color:white;}
+/*index.styles.css ends here. This code is applied to all subpages which
+contains the header and the nav*/
+
+
+
+/*header_styles.css starts here, this code is directly applied to manage m header.php page*/
+.main_content {background-color: pink;
+    width:636px;
+    height:799px;
+    float:right;}
+
+.aside_right_top {background-color:lightgrey;
+    width:314px;
+    height: 450px;
+    float:left;}
+
+
+.aside_right_bottom {background-color:yellow;
+    width:314px;
+    height: 349px;
+    float:left;}
+
+.main_content2 {background-color: lightslategray;
+    width:950px;
+    height:799px;
+    float:right;
+margin-bottom:5px;}
+
+    
