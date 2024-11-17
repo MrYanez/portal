@@ -1,63 +1,55 @@
-<!--header.php starts here-->
-<DOCTYPE html>
-    <html lang="en">
-        <head>
-        <title><?=$title?></title>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta http-equiv='cache-control' content='no-cache'> 
-            <meta http-equiv='expires' content='0'> 
-            <meta http-equiv='pragma' content='no-cache'>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          
-            <title><?=$title?></title>
-            <link href="./css/index_styles.css" type="text/css" rel="stylesheet">
-            <link href="./css/header_styles.css" type="text/css" rel="stylesheet">
-        </head>
 
-        <body class="header"> 
-            <div id="wrapper">  
-        <header>
-             <section class="tittle" alt="title">
-            <h1>My Portal Page</h1>  
-            </section>
-                <nav id="primary">
-                    <ul>
-                        <li><a href="https://nahyan.dreamhosters.com/portal/index.php">INDEX</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="Work.html">WORK</a></li>
-                        <li><a href="gallery.html">GALLERY</a></li>
-                        <li><a href="https://nahyan.dreamhosters.com/portal/includes/contact.php">CONTACT</a></li>
-                    </ul>
-                </nav> 
-            </header>
-    <!--header.php including nav ends here-->
+<?php include 'portal-config.php';?>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title><?=$title?></title>
+    <title>Nahum Yanez</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://use.fontawesome.com/6a71565c22.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+  
+ </head>
+ <body>
+     <header>
+     <h1><i class="logo fa <?=$logo?>"></i> Nahum Yanez</h1>
+        <nav class="topnav" id="myTopnav">
+        <a href="https://nahyan.dreamhosters.com/portal/index.php#" class="active">Home</a>
+            <a href="https://nahyan.dreamhosters.com/portal/includes/header.php" target="_blank">Header</a>
+            <a href="https://nahyan.dreamhosters.com/portal/includes/contact.php" target="_blank">Contact</a>
+            <a href="https://nahyan.dreamhosters.com/portal/includes/case-study.php" target="_blank">Case Study</a>
+            <a href="" target="_blank">Portal-config</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>
+     
+   <main class="wrapper">
+        <h2 class="subheader"><?=$PageID?>!</h2>
+        <?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
 
- <!--<seccion main_content starts here-->
- <div class="main_content">
-                <h2><?=$title?></h2>
-                </div>
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "yaneznahum123@gmail.com";  //place your/your client's email address here
+        $toName = "Nahum"; //place your client's name here
+        $website = "IT162 Contact form";  //place NAME of your client's website
 
-                <div class="aside_right_top">
-                   
-                </div>
+        //echo loadContact('simple.php');#demonstrates a simple contact form
+        echo loadContact('multiple.php');#demonstrates multiple form elements
 
-                <div class="aside_right_bottom">
+	?>
 
-                </div>
 
-                <div class="main_content2"></div>
+<?php include 'includes/footer.php';?>
+  
 
-    <!--<section main_content ends here-->
-            
 
-    <footer>
-                    <ul>
-                        <li>Copyright 2023 &copy;</li>
-                        <li>All rights reserved</li>
-                        <li><a href="">Terms of Use</a></li>
-                        <li><a href="">Designed By Nahum Yanez</a></li>
-                        <li><a href="https://nahyan.dreamhosters.com/portal/index.html">Index.html</a></li>
-                        <li><a href="">Page Valid</a></li>
-                    </ul>
-                </footer>
+    
